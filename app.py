@@ -13,7 +13,7 @@ def handler(event, context):
     
     return {
         'headers': {'Content-Type' : 'application/json'},
-        'statusCode': 200,
-        'body': json.dumps({"message": "Lambda Container image invoked!",
+        'statusCode': 300,
+        'body': json.dumps({"message": "Lambda Container image invoked By codeBuild!",
                             "event": event})
     }
